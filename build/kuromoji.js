@@ -8239,9 +8239,11 @@ var TokenInfoDictionary = require("./dict/TokenInfoDictionary");
 var ConnectionCosts = require("./dict/ConnectionCosts");
 var UnknownDictionary = require("./dict/UnknownDictionary");
 var CharacterDefinition = require("./dict/CharacterDefinition");
+var doublearray = require("doublearray");
 
 // Public methods
 var kuromoji = {
+    doublearray: doublearray,
     DynamicDictionaries: DynamicDictionaries,
     TokenInfoDictionary: TokenInfoDictionary,
     ConnectionCosts: ConnectionCosts,
@@ -8259,7 +8261,7 @@ var kuromoji = {
 
 module.exports = kuromoji;
 
-},{"./Tokenizer":7,"./TokenizerBuilder":8,"./dict/CharacterDefinition":10,"./dict/ConnectionCosts":11,"./dict/DynamicDictionaries":12,"./dict/TokenInfoDictionary":14,"./dict/UnknownDictionary":15,"./dict/builder/DictionaryBuilder":18,"./loader/BrowserDictionaryLoader":20}],20:[function(require,module,exports){
+},{"./Tokenizer":7,"./TokenizerBuilder":8,"./dict/CharacterDefinition":10,"./dict/ConnectionCosts":11,"./dict/DynamicDictionaries":12,"./dict/TokenInfoDictionary":14,"./dict/UnknownDictionary":15,"./dict/builder/DictionaryBuilder":18,"./loader/BrowserDictionaryLoader":20,"doublearray":2}],20:[function(require,module,exports){
 /*
  * Copyright 2014 Takuya Asano
  * Copyright 2010-2014 Atilika Inc. and contributors

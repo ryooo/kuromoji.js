@@ -26,9 +26,11 @@ var TokenInfoDictionary = require("./dict/TokenInfoDictionary");
 var ConnectionCosts = require("./dict/ConnectionCosts");
 var UnknownDictionary = require("./dict/UnknownDictionary");
 var CharacterDefinition = require("./dict/CharacterDefinition");
+var doublearray = require("doublearray");
 
 // Public methods
 var kuromoji = {
+    doublearray: doublearray,
     DynamicDictionaries: DynamicDictionaries,
     TokenInfoDictionary: TokenInfoDictionary,
     ConnectionCosts: ConnectionCosts,
