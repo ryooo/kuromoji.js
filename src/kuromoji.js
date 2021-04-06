@@ -19,9 +19,23 @@
 
 var TokenizerBuilder = require("./TokenizerBuilder");
 var DictionaryBuilder = require("./dict/builder/DictionaryBuilder");
+var DynamicDictionaries = require("./dict/DynamicDictionaries");
+var BrowserDictionaryLoader = require("./loader/BrowserDictionaryLoader");
+var Tokenizer = require("./Tokenizer");
+var TokenInfoDictionary = require("./dict/TokenInfoDictionary");
+var ConnectionCosts = require("./dict/ConnectionCosts");
+var UnknownDictionary = require("./dict/UnknownDictionary");
+var CharacterDefinition = require("./dict/CharacterDefinition");
 
 // Public methods
 var kuromoji = {
+    DynamicDictionaries: DynamicDictionaries,
+    TokenInfoDictionary: TokenInfoDictionary,
+    ConnectionCosts: ConnectionCosts,
+    UnknownDictionary: UnknownDictionary,
+    CharacterDefinition: CharacterDefinition,
+    Tokenizer: Tokenizer,
+    DictionaryLoader: BrowserDictionaryLoader,
     builder: function (option) {
         return new TokenizerBuilder(option);
     },
